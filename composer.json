@@ -1,0 +1,23 @@
+{
+    "name": "flatnine/ci-project",
+    "description": "CI Test Project",
+    "authors": [
+        {
+            "name": "Javier Lopez",
+            "email": "alcaraz1983@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://satis.d/"
+        }
+    ],
+    "require": {
+	"monolog/monolog"  : "1.0.*",
+	"flatnine/satisfy" : "dev-master"
+    },
+    "autoload": {
+        "psr-0": {"Flatnine": "src/"}
+    }
+}
