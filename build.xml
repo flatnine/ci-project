@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="ci-project Repo" default="welcome" basedir="." description="Test Project CI Infrastructure">
+<project name="ci-project Repo" default="build" basedir="." description="Test Project CI Infrastructure">
  <property name="message" value="Build Test"/>
- <target name="welcome">
+ <target name="build">
   <echo msg="${message}"/>
   <exec command="/usr/local/bin/composer update" passthru="true"/>
   <exec command="#rsync -av web/ www-data@satis.d:/var/www/satis/" passthru="true" />
+ </target>
+ <target name="Tests">
+  <exec command="#phpunit" passthru="true"/>
  </target>
 </project>
