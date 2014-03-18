@@ -9,7 +9,6 @@
     ],
     "require": {
 	"monolog/monolog"  : "1.0.*",
-	"flatnine/satisfy" : "dev-master",
 	"phpunit/phpunit": "3.7.31"
     },
     "autoload": {
