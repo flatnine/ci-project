@@ -7,6 +7,6 @@
   <exec command="#rsync -av web/ www-data@satis.d:/var/www/satis/" passthru="true" />
  </target>
  <target name="Tests">
-  <exec command="#phpunit" passthru="true"/>
+  <exec command="phpunit" passthru="true"/>
  </target>
 </project>
