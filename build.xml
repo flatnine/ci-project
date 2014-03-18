@@ -9,4 +9,7 @@
  <target name="tests">
   <exec command="phpunit" passthru="true"/>
  </target>
+ <target name="deploytoqa">
+  <exec command="rsync -av ./ jenkins2.timesout.net:/var/www/html/" passthru="true" />
+ </target>
 </project>
